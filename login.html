@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viperr Network - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="window login-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Viperr Network - Login</div>
+        </div>
+        <div class="window-body">
+            <form id="loginForm">
+                <p>Логин: <input type="text" id="loginInput" required></p>
+                <p>Пароль: <input type="password" id="passwordInput" required></p>
+                <section class="field-row" style="justify-content: flex-end">
+                    <button type="submit">Войти</button>
+                    <button type="button" id="registerBtn">Регистрация</button>
+                </section>
+            </form>
+            <div id="loginMessage"></div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

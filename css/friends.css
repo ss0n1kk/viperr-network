@@ -1,0 +1,101 @@
+.friends-window {
+    width: 90%;
+    max-width: 800px;
+    height: 80vh;
+    margin: 50px auto;
+}
+
+.search-section {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 5px;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #808080;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.search-result-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.search-result-item:hover {
+    background: #000080;
+    color: white;
+}
+
+.friends-content {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.friends-section {
+    margin-bottom: 30px;
+}
+
+.friends-section h3 {
+    color: #000080;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 5px;
+}
+
+.artists-list,
+.friends-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.friend-card {
+    border: 1px solid #808080;
+    padding: 15px;
+    background: white;
+    text-align: center;
+}
+
+.friend-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.friend-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.friend-city {
+    color: #808080;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.friend-actions {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.friend-actions button {
+    font-size: 10px;
+    padding: 2px 8px;
+}

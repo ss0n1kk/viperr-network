@@ -1,0 +1,154 @@
+/* Основные стили Windows 95 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "MS Sans Serif", "Microsoft Sans Serif", sans-serif;
+}
+
+body {
+    background: #008080 url('../images/windows95-bg.png') center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+/* Стили окон */
+.window {
+    border: 2px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    background: #c0c0c0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar {
+    background: linear-gradient(90deg, #000080, #1084d0);
+    color: white;
+    padding: 2px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+.title-bar-controls {
+    display: flex;
+}
+
+.title-bar-controls button,
+.title-bar-controls a {
+    width: 16px;
+    height: 14px;
+    margin-left: 2px;
+    background-color: #c0c0c0;
+    border: 1px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    font-size: 8px;
+    text-align: center;
+    line-height: 10px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.title-bar-controls button:active,
+.title-bar-controls a:active {
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-right-color: #dfdfdf;
+    border-bottom-color: #dfdfdf;
+}
+
+.window-body {
+    padding: 10px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+/* Формы и кнопки */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    padding: 3px 5px;
+    border: 1px solid;
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-right-color: #dfdfdf;
+    border-bottom-color: #dfdfdf;
+    background: white;
+}
+
+button {
+    padding: 3px 10px;
+    border: 1px solid;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    background: #c0c0c0;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+button:active {
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-right-color: #dfdfdf;
+    border-bottom-color: #dfdfdf;
+}
+
+.field-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.field-row label {
+    margin-right: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .window {
+        width: 95%;
+    }
+    
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .window-body {
+        padding: 5px;
+    }
+    
+    .field-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .field-row label {
+        margin-bottom: 5px;
+    }
+}

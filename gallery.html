@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Viperr Network</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div class="window gallery-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Gallery</div>
+            <div class="title-bar-controls">
+                <a href="index.html" aria-label="Close">X</a>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="gallery-controls">
+                <label>Фильтр:</label>
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="friends">Друзья</button>
+                <button class="filter-btn" data-filter="family">Родные</button>
+                <button class="filter-btn" data-filter="personal">Личные</button>
+            </div>
+            
+            <div id="gallery" class="gallery-grid">
+            </div>
+        </div>
+    </div>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

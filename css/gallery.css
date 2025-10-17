@@ -1,0 +1,56 @@
+.gallery-window {
+    width: 90%;
+    max-width: 900px;
+    height: 80vh;
+    margin: 50px auto;
+}
+
+.gallery-controls {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #e0e0e0;
+    border: 1px solid #808080;
+}
+
+.gallery-controls label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-btn {
+    margin-right: 5px;
+}
+
+.filter-btn.active {
+    background: #000080;
+    color: white;
+}
+
+.gallery-grid {
+    height: calc(100% - 80px);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.gallery-item {
+    border: 1px solid #808080;
+    padding: 10px;
+    height: 200px;
+    background: white;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.gallery-item p {
+    font-size: 12px;
+    margin: 0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Album - Viperr Network</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/damage.css">
+</head>
+<body>
+     <div class="window damage-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Damage - Album</div>
+            <div class="title-bar-controls">
+                <a href="index.html" aria-label="Close">X</a>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="album-header">
+                <img src="images/album-cover.jpg" alt="Damage Album Cover" class="album-cover">
+                <div class="album-info">
+                    <h1>Damage</h1>
+                    <p><strong>Исполнитель:</strong> Viperr</p>
+                    <p><strong>Дата релиза:</strong> 2024</p>
+                    <p><strong>Жанр:</strong> Hip-Hop/Rap</p>
+                </div>
+            </div>
+            
+            <div class="track-list">
+                <h2>Треки:</h2>
+                <div id="tracksContainer">
+                    <!-- Треки будут добавлены через JS -->
+                </div>
+            </div>
+            
+            <div class="player-section">
+                <audio id="audioPlayer" controls class="audio-player">
+                    Ваш браузер не поддерживает аудио элементы.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/player.js"></script>
+</body>
+</html>
